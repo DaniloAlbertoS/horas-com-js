@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>o dilema do game</title>
+</head>
+<body>
+    <h1>quem tem o melhor console é</h1>
+    Coloque  seu  game do lado: 
+    <input type="text" name="txtgame" id="txtgame">
+   
+    <input type="button" value="validar" onclick="mostrar()">
+
+    <div id="valor">
+
+    </div>
+    <script>
+        function mostrar(){
+            var game = window.document.getElementById('txtgame')
+            var valor = window.document.getElementById('valor')
+            var resu = (game.value)
+            valor.innerHTML = `<p> esse é seu  <strong> ${resu}</strong></p>`
+            if(resu =='ps5'){
+                valor.innerHTML += `<p> Você é um cara privilegiado!!!!!!</p>`
+            }else{
+                valor.innerHTML += `<p> que pena , sinto sua dor !!!`
+                valor.innerHTML += `<P> você precisa comprar um ps5 agora!!!!`
+            }
+            
+                
+            
+        }
+    </script>
+
+
+</body>
+</html>
