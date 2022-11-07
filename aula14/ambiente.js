@@ -5,8 +5,8 @@ while( c <=12){
 }*/
 //------------------------------------------------------
 console.log('contagem regressiva!')
-for(var n =10; n>=1; n--){
-    console.log(`numero ${n}`)
+for(var n =10; n>=0; n--){
+    console.log(`... ${n}`)
 }
-console.log('aqui chegamos  ao fim!')
+console.log('a bomba explodiu!!!!!!')
 // esse e  o modo for  com variavel de  repetição
