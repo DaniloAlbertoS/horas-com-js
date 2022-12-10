@@ -4,17 +4,28 @@ function contar() {
     var passo = document.getElementById('txtp')
     var res = document.getElementById('res')
    
-    if (ini.value.length == 0 || fim.value.length ==0 || passo.value.length ==0){
+    if (ini.value.length == 0 || fim.value.length == 0 || passo.value.length ==0){
         window.alert('[Erro] Estão faltando dados!')
     }else{
-        res.innerHTML = 'contando:'
+        res.innerHTML = 'contando: <br>'
         var i = Number(ini.value)
         var f = Number(fim.value)
         var p = Number(passo.value)
-       
-        for(var c =i; c <= f; c += p) {
-            res.innerHTML += `${c}`
+        if (p <= 0){
+            window.alert('passo invalido! Considerando passo 1')
+            p =1
         }
-    }
-    
+       if (i < f) {
+        // contagem crescente
+            for(var c = i; c <= f; c += p) {
+                res.innerHTML += `${c} \u{1F92A}`
+        }
+        //contagem regressiva
+      } else{
+        for ( var c = i; c >= f; c-=p){
+            res.innerHTML += `${c} \u{1F92A}`
+        }
+      }
+      res.innerHTML += `\u{1F3C1}`
+   }
 }
