@@ -1,0 +1,47 @@
+@charset "utf-8";
+@ body{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgba(0, 0, 255, 0.651);
+}
+
+header h1{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.562);
+}   
+div{
+    
+    }
+
+
+
+section{
+    width: 60%;
+    padding: 10px;
+    display: block;
+    margin: auto;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.616);
+}
+select#flista{
+    width: 150px;
+}
+
+
+footer p{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+
+
+}
